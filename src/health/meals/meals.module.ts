@@ -20,6 +20,7 @@ export const ROUTES: Routes = [
     MealsComponent
   ]
 })
+
 export class MealsModule {
 
 }

@@ -15,3 +15,4 @@ export const ROUTES: Routes = [
   ]
 })
 export class HealthModule {}
+

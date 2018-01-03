@@ -7,7 +7,7 @@ import 'rxjs/add/operator/distinctUntilChanged';
 import { User } from './auth/shared/services/auth/auth.service';
 
 export interface State {
-  user: User, 
+  user: User,
   [key: string]: any
 }
 

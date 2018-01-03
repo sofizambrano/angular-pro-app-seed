@@ -20,6 +20,4 @@ export const ROUTES: Routes = [
     ScheduleComponent
   ]
 })
-export class ScheduleModule {
-
-}
+export class ScheduleModule {}

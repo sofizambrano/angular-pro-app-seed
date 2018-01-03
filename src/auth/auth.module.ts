@@ -13,7 +13,7 @@ import { SharedModule } from './shared/shared.module';
 export const ROUTES: Routes = [
   {
     path: 'auth',
-    children:[
+    children: [
       { path: '', pathMatch: 'full', redirectTo: 'login' },
       { path: 'login', loadChildren:'./login/login.module#LoginModule' },
       { path: 'register', loadChildren:'./register/register.module#RegisterModule' },
@@ -41,3 +41,4 @@ export const firebaseConfig: FirebaseAppConfig = {
   ]
 })
 export class AuthModule {}
+

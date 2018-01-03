@@ -4,28 +4,27 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'auth-form',
   styleUrls: ['auth-form.component.scss'],
-  template:`
+  template: `
     <div class="auth-form">
       <form [formGroup]="form" (ngSubmit)="onSubmit()">
-
+        
         <ng-content select="h1"></ng-content>
 
         <label>
-          <input
-            type="email"
+          <input 
+            type="email" 
             placeholder="Email address"
             formControlName="email">
         </label>
-
         <label>
-          <input
-            type="password"
+          <input 
+            type="password" 
             placeholder="Enter password"
             formControlName="password">
         </label>
 
         <div class="error" *ngIf="emailFormat">
-          Invalid emil format
+          Invalid email format
         </div>
 
         <div class="error" *ngIf="passwordInvalid">

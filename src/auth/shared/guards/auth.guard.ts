@@ -14,11 +14,11 @@ export class AuthGuard implements CanActivate {
 
   canActivate() {
     return this.authService.authState
-      .map((user)=> {
+      .map((user) => {
         if (!user) {
           this.router.navigate(['/auth/login']);
         }
-        return !!null;
+        return !!user;
       });
   }
 }

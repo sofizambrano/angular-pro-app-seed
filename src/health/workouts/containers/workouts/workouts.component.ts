@@ -11,4 +11,6 @@ import { Component } from '@angular/core';
 })
 export class WorkoutsComponent {
 
+  constructor() {}
+
 }

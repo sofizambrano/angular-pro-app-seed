@@ -7,7 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { WorkoutsComponent } from './containers/workouts/workouts.component';
 
 export const ROUTES: Routes = [
-  { path: '', component: WorkoutsComponent}
+  { path: '', component: WorkoutsComponent }
 ];
 
 @NgModule({
@@ -20,6 +20,7 @@ export const ROUTES: Routes = [
     WorkoutsComponent
   ]
 })
+
 export class WorkoutsModule {
 
 }

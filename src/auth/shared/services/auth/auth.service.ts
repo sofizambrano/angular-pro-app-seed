@@ -6,7 +6,7 @@ import 'rxjs/add/operator/do';
 
 import { AngularFireAuth } from 'angularfire2/auth';
 
-export interface User{
+export interface User {
   email: string,
   uid: string,
   authenticated: boolean

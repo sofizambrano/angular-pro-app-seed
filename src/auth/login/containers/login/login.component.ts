@@ -6,7 +6,7 @@ import { AuthService } from '../../../shared/services/auth/auth.service';
 
 @Component({
   selector: 'login',
-  template:`
+  template: `
     <div>
       <auth-form (submitted)="loginUser($event)">
         <h1>Login</h1>
@@ -15,8 +15,8 @@ import { AuthService } from '../../../shared/services/auth/auth.service';
           Login
         </button>
         <div class="error" *ngIf="error">
-      {{ error }}
-    </div>
+          {{ error }}
+        </div>
       </auth-form>
     </div>
   `
