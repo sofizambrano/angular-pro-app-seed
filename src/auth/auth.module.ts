@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, Routes, } from '@angular/router'; 
+import { RouterModule, Routes } from '@angular/router'; 
 
 // third-party modules
 import { AngularFireModule, FirebaseAppConfig } from 'angularfire2';
@@ -15,8 +15,8 @@ export const ROUTES: Routes = [
     path: 'auth',
     children: [
       { path: '', pathMatch: 'full', redirectTo: 'login' },
-      { path: 'login', loadChildren:'./login/login.module#LoginModule' },
-      { path: 'register', loadChildren:'./register/register.module#RegisterModule' },
+      { path: 'login', loadChildren: './login/login.module#LoginModule' },
+      { path: 'register', loadChildren: './register/register.module#RegisterModule' },
     ]
   }
 ];
@@ -37,7 +37,7 @@ export const firebaseConfig: FirebaseAppConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule,
     AngularFireDatabaseModule,
-    SharedModule.forRoot(),
+    SharedModule.forRoot()
   ]
 })
 export class AuthModule {}

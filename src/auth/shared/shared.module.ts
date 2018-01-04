@@ -17,20 +17,19 @@ import { AuthGuard } from './guards/auth.guard';
     ReactiveFormsModule
   ],
   declarations: [
-    AuthFormComponent,
+    AuthFormComponent
   ],
   exports: [
-    AuthFormComponent,
+    AuthFormComponent
   ]
 })
-
 export class SharedModule {
   static forRoot(): ModuleWithProviders {
     return {
       ngModule: SharedModule,
-      providers:[
+      providers: [
         AuthService,
-        AuthGuard,
+        AuthGuard
       ]
     };
   }

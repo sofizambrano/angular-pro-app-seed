@@ -27,7 +27,7 @@ export class LoginComponent {
 
   constructor(
     private authService: AuthService,
-    private router: Router,
+    private router: Router
   ) {}
 
   async loginUser(event: FormGroup) {
@@ -39,4 +39,5 @@ export class LoginComponent {
       this.error = err.message;
     }
   }
+  
 }

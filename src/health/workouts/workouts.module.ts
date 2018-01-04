@@ -33,7 +33,4 @@ export const ROUTES: Routes = [
     WorkoutTypeComponent
   ]
 })
-
-export class WorkoutsModule {
-
-}
+export class WorkoutsModule {}

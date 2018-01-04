@@ -31,7 +31,4 @@ export const ROUTES: Routes = [
     MealFormComponent
   ]
 })
-
-export class MealsModule {
-
-}
+export class MealsModule {}

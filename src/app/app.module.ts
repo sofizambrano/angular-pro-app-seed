@@ -25,12 +25,12 @@ export const ROUTES: Routes = [
     BrowserModule,
     RouterModule.forRoot(ROUTES),
     AuthModule,
-    HealthModule,
+    HealthModule
   ],
   declarations: [
     AppComponent,
     AppHeaderComponent,
-    AppNavComponent,
+    AppNavComponent
   ],
   providers: [
     Store
